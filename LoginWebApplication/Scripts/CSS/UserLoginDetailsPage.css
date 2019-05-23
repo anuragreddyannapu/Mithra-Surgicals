@@ -1,0 +1,62 @@
+﻿body {
+    background-color:snow;
+    /*background-image:url(../Images/s-l640.jpg);*/
+
+}
+
+header {
+    height:80px;
+    padding:5px 5px;
+    text-align:left;
+    color:black;
+    /*background-color:#95027B;*/
+}
+
+
+
+.LoginUserTextbox {
+        padding: 10px 10px;
+        color:#95027B;
+        width:250px;
+}
+
+.LoginUserText {
+    color:black;
+}
+
+
+.UserLoginTable {
+
+    height:300px;
+}
+
+.UserLoginButton {
+
+        padding: 5px 5px;
+        color:#95027B;
+        width:80px;
+
+}
+
+.LoginTextHeader {
+
+    text-align:center;
+    color:black;
+    padding:2px 2px;
+}
+
+.LoginNotAmember {
+    color:black;
+}
+
+footer {
+    text-align:center;
+    color:black;
+    height:50px;
+}
+
+
+
+/*color:#95027B;*/
+
+

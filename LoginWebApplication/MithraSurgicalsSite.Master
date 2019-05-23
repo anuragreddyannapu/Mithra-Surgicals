@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MithraSurgicalsSite.Master.cs" Inherits="LoginWebApplication.MithraSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Scripts/CSS/UserLoginDetailsPage.css" rel="stylesheet" />
+    <script src="Scripts/JavaSript/LoginUserDetails.js"></script>
+    <link href="Scripts/CSS/Registration.css" rel="stylesheet" />
+    <script src="Scripts/JavaSript/Registration.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <table style="font-family:Arial">
+
+            <tr>
+                <td colspan="2" style="height:50px;background-color:#0094ff; padding:10px 10px;overflow:hidden; color:#95027B;text-align:left" >
+                    <h2> Mithra Surgicals Login </h2>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td style="width:2000px;height:500px;color:#95027B;text-align:center; background-image:url(Images/PlatesAndScrs.jpg)" class="auto-style1">
+                    
+                    <h3></h3>
+                    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color:azure;text-align:center">
+                    <b> Copyright © 2020 - 2025 Mithra Surgicals World </b>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
