@@ -60,6 +60,7 @@
 
 Our Latest venture OrthoTV has received great response and our whtasapp and telegram forums have solidified into essential portals for any orthopod in the country. However we think we have not even started in our Journey of making India leader in Orthopaedic Research in the world. We would need support from all of you to realise this core dream of ours. In next one week we will announce some more ventures and portals that will help us further our goal of Improving Research Scenario in the Country. With expansion of our various ventures there is immense strain on our resources and we would request the orthopaedic community to help us by donating to IORG. We assure you that all money will be used for betterment of Orthopaedic research in India and also invested in various ventures like OrthoTV and Journals. Use the link below to Donate:
             </p>
+           <%-- skjdfjksdf--%>
 
 
         </article>
