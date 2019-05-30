@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
 using System.Web.Configuration;
+using IFCComponent;
 
 namespace LoginWebApplication
 {
@@ -27,7 +28,18 @@ namespace LoginWebApplication
             //((Button)sender).Enabled = false;
             try
             {
-                SqlConnection con = new SqlConnection(WebConfigurationManager.ConnectionStrings["MyDBConn"].ConnectionString);
+                clsCrypto clscry = new clsCrypto();
+                
+                String connstr = WebConfigurationManager.ConnectionStrings["MyDBConn"].ConnectionString;
+                string Condatasour = connstr.Split(';')[0];
+                String dbnamestr = connstr.Split(';')[1];
+                string Dbsource = clscry.fDecryptString(Condatasour.Split('=')[1] + "=");
+                String dbname = clscry.fDecryptString(dbnamestr.Split('=')[1] + "==");
+
+                String conn = connstr.Replace(dbnamestr.Split('=')[1] + "==", dbname);
+                String conns = conn.Replace(Condatasour.Split('=')[1] + "=", Dbsource);
+                SqlConnection con = new SqlConnection(conns);
+                //SqlConnection con = new SqlConnection(WebConfigurationManager.ConnectionStrings["MyDBConn"].ConnectionString);
                 SqlCommand cmd = new SqlCommand("SPCreateRegistrationDetails", con);
                 con.Open();
                 cmd.CommandType = CommandType.StoredProcedure;
